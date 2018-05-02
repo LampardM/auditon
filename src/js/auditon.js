@@ -17,9 +17,6 @@ const centerChart = echarts.init(document.getElementById('echart-center-containe
 
 // tab切换
 let iNowIndex = 0
-let barOne = mockdata.echartsOne.barOne
-let barTwo = mockdata.echartsOne.barTwo
-let line = mockdata.echartsOne.line
 
 const tabChoseColor = (index = 0) => {
   $tabAllSpan.each((index)=> {
@@ -134,7 +131,6 @@ const init = () => {
   tabChoseColor()
   bindTabEvent()
   resetEchartData()
-  // setCenterOption()
 }
 
 init()
