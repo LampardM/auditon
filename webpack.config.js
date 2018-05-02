@@ -32,7 +32,7 @@ const config = {
         loader: 'babel-loader',
       },
       {
-        test: /\.less$/,
+        test: /\.(less|css)$/,
         use: [{
           loader: 'style-loader',
         }, {
@@ -62,6 +62,7 @@ const config = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
+      'window.jQuery': 'jquery',
       _: 'lodash'
     }),
     new webpack.HotModuleReplacementPlugin(),

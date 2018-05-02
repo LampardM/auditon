@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body id="auditon-container">
+  <div id="echart-container">
+    <div id="top-container" class="clearfix" style="overflow: hidden;">
+      <div class="chart-title pull-left">会员复购率分析</div>
+      <div class="btn-group pull-left">
+        <button type="button" class="btn btn-default dropdown-toggle btn-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2017<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li class="drop-li"><a href="#">2018</a></li>
+        </ul>
+      </div>
+      <div class="radio radio-chart pull-left">
+        <label>
+          <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..." checked> 所有门店
+        </label>
+      </div>
+      <div class="search-input pull-left">
+        <input type="text" class="form-control" placeholder="请输入指定的店仓编码">
+      </div>
+    </div>
+    <div id="center-container">
+      <div class="tab-change clearfix" id="tab-change">
+        <span class="pull-left" index="0">按客户计算</span>
+        <span class="pull-left" index="1">按交易计算</span>
+      </div>
+      <div id="echart-center-container"></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+@import "main.less";
+
+#auditon-container{
+  display:flex;
+  height: 1200px;
+  justify-content:center;
+
+  #echart-container {
+    width: 1200px;
+    height: 600px;
+    border: 1px solid @border-color;
+    border-radius: 4px;
+
+    #top-container {
+      height: 60px;
+      .chart-title {
+        margin: 20px 24px 0 15px;
+        font-size: 18px;
+        width: 130px;
+      }
+      .btn-drop {
+        margin: 15px 40px 0 0;
+        width: 200px;
+        text-align: left;
+        border: 1px solid @drop-border-color;
+        outline: none;
+        transition: none;
+        
+      }
+      .dropdown-toggle::after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 7.255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent;
+      }
+      
+      .drop-li{
+        padding-left: 12px;
+      }
+      .radio-chart {
+        margin-top: 20px;
+      }
+      .search-input {
+        width: 250px;
+        margin: 15px 0 0 20px;
+      }
+    }
+
+    #center-container {
+      margin: 20px 40px;
+      .tab-change {
+        span {
+          width: 120px;
+          height: 30px; 
+          line-height: 30px;
+          display: inline-block;
+          border: 1px solid @border-color;
+          text-align: center;
+          margin-right: 0;
+          cursor: pointer;
+        }
+      }
+      #echart-center-container {
+        width: 100%;
+        height: 500px;
+      }
+    }
+  }
+}
