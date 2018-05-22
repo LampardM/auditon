@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "笔试",
   "scripts": {
-    "dev": "rm -rf ./dist && webpack-dev-server --inline --progress --mode development --config webpack.config.js",
-    "build": "rm -rf ./dist && webpack --mode production"
+    "dev": "webpack-dev-server --inline --progress --mode development --config webpack.config.js",
+    "build": "webpack --mode production"
   },
   "author": "zhangl",
   "license": "ISC",
